@@ -1,0 +1,137 @@
+body {
+    background: BLACK;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #ef0406;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0; /* Уберите отступы для body */
+    font-family: 'YujiSyuku', sans-serif;
+    background-image: url(elements/ss.png);
+    background-size: cover; 
+    
+
+    
+
+    
+    
+      overflow: hidden; /* Скрыть прокрутку */
+}
+@font-face {
+    font-family: 'YujiSyuku';
+    src: url('YujiSyuku-Regular.ttf') format('opentype');
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+    
+    p {
+        padding: 10px; /* Добавим немного внутреннего отступа */
+    }
+}
+/* Стили для средних экранов (планшеты) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 15px; /* Уменьшаем размер шрифта */
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    p {
+        padding: 20px; /* Добавим немного внутренних отступов */
+    }
+}
+
+/* Стили для больших экранов (настольные ПК) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px; /* Оставляем размер шрифта стандартным */
+    }
+    
+    p {
+        padding: 30px; /* Добавляем больше внутренних отступов */
+    }
+}
+.left,  .right {
+    flex: 1; /* Равные веса для всех трех элементов */
+    display: flex; /
+}
+.left {
+    justify-content: flex-start; /* Текст слева */
+    flex-direction: column; /
+    flex: 1;
+    
+}
+.center {
+    flex: 1; /* Задает центральному элементу оставшуюся ширину */
+    text-align: center; /* Центрирование текста в центральном элементе */
+    font-size: 30px; /* Размер текста для центрального элемента */
+    padding: 0 20px; /* Добавляем горизонтальные отступы для центрального текста */
+    position: relative; /* Позволяет использовать свойства top или bottom */
+    top: 30px; /* Смещаем текст вниз на 10 пикселей */
+}
+.right {
+    justify-content: flex-end; /* Текст справа */
+    flex: 1;
+}
+.image {
+    max-width: 150px; /* Задаем максимальную ширину для изображения */
+    height: auto; /* Высота будет устанавливаться автоматически для сохранения пропорций */
+    margin-right: 10px; /* Добавим отступ справа от изображения */
+    vertical-align: middle; /* Вертикальное центрирование изображения относительно текста */
+}
+.maintext {
+    font-family: 'YujiSyuku', sans-serif;
+    font-size: 50px;
+
+}
+.ico, .additional-img {
+       max-width: 100px; /* Задайте одинаковую максимальную ширину */
+       height: auto; /* Авто-высота */
+       margin: 0; /* Убираем возможные отступы */
+}
+.header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box; /* Чтобы отступы не влияли на ширину */
+}
+.additional-img {
+    max-width: 50px; /* Устанавливаем максимальную ширину для дополнительного изображения */
+    height: 800px; 
+    position: relative;
+    top: 10px;
+    width: 20px;
+}
+.down-img {
+    display: flex; 
+        text-align: center;
+    width: 100%; /* Задает ширину на 100% */
+    height: 200px; /* Высота (настраиваемая) */
+    overflow: hidden; /* Скрывает лишнюю часть изображения */
+    position: relative; /* Убедитесь, что у контейнера позиционирование относительное */
+}
+.leftpanel {
+    
+}
